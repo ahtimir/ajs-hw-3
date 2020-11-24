@@ -4,16 +4,28 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahtimir/ajs-hw-3.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahtimir/ajs-hw-3/issues"
   },
-  "homepage": "https://github.com/ahtimir/ajs-hw-3#readme"
+  "homepage": "https://github.com/ahtimir/ajs-hw-3#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
